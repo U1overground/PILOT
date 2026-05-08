@@ -2,9 +2,9 @@
 
 PILOT: A Data-Free Continual Learning Approach for Real-Time Semantic Segmentation via Boundary Guidance
 
-## Highlights
+## Overview
 
-<img src="validation_samples/miou_comp.png" alt="mIoU Comparison" width="600">
+![Architecture Diagram](validation_samples/architecture_diagram.png)
 
 - Real-Time Continual Learning: PILOT enables incremental class learning on PIDNet without retraining, maintaining real-time inference speeds for autonomous driving deployment.
 - Data-Free & Replay-Free: Trains exclusively on new-class data without storing or revisiting previous samples, eliminating memory overhead
@@ -16,8 +16,8 @@ PILOT: A Data-Free Continual Learning Approach for Real-Time Semantic Segmentati
 - TODO: update 2
 - Upload all the code (5/8/2026)
 
-## Overview
+## Validation
 
-![Architecture Diagram](validation_samples/architecture_diagram.png)
+<img src="validation_samples/miou_comp.png" alt="mIoU Comparison" width="600">
 
 ![Validation Sample](validation_samples/frankfurt_000000_018797_gtFine_labelIds_vis.png)
