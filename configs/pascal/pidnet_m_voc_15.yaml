@@ -1,0 +1,40 @@
+CUDNN: {BENCHMARK: true, DETERMINISTIC: false, ENABLED: true}
+DATASET: {DATASET: pascal_voc, NUM_CLASSES: 16, ROOT: /content/data/VOCdevkit/VOC2012,
+  TEST_SET: /content/data/VOCdevkit/VOC2012/ImageSets/Segmentation/val.txt, TRAIN_SET: /content/data/VOCdevkit/VOC2012/ImageSets/Segmentation/train_split.txt}
+GPUS: (0,)
+LOG_DIR: log
+LOSS:
+  BALANCE_WEIGHTS: [0.4, 1.0]
+  OHEMKEEP: 131072
+  OHEMTHRES: 0.9
+  SB_WEIGHTS: 1.0
+  USE_OHEM: true
+MODEL: {NAME: pidnet_medium, NUM_OUTPUTS: 2, PRETRAINED: /content/drive/MyDrive/CSS/PIDNet/pretrained_models/imagenet/PIDNet_M_ImageNet.pth.tar}
+OUTPUT_DIR: output
+PRINT_FREQ: 10
+TEST:
+  BASE_SIZE: 512
+  BATCH_SIZE_PER_GPU: 1
+  FLIP_TEST: false
+  IMAGE_SIZE: [512, 512]
+  MODEL_FILE: ''
+  MULTI_SCALE: false
+  OUTPUT_INDEX: 1
+TRAIN:
+  BASE_SIZE: 512
+  BATCH_SIZE_PER_GPU: 16
+  BEGIN_EPOCH: 0
+  END_EPOCH: 100
+  FLIP: true
+  IGNORE_LABEL: 255
+  IMAGE_SIZE: [512, 512]
+  LR: 0.01
+  MOMENTUM: 0.9
+  MULTI_SCALE: true
+  NESTEROV: false
+  OPTIMIZER: sgd
+  RESUME: false
+  SCALE_FACTOR: 16
+  SHUFFLE: true
+  WD: 0.0005
+WORKERS: 4

@@ -1,0 +1,1 @@
+The gtFine and leftImg8bit folders from Cityscapes dataset are placed here.
