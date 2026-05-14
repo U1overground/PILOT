@@ -18,6 +18,6 @@ PILOT: A Data-Free Continual Learning Approach for Real-Time Semantic Segmentati
 
 ## Validation
 
-<img src="validation_samples/miou_comp.png" alt="mIoU Comparison" width="600">
-
 ![Validation Sample](validation_samples/frankfurt_000000_018797_gtFine_labelIds_vis.png)
+![Validation Sample](validation_samples/lindau_000056_000019_gtFine_labelIds_vis.png)
+![Validation Sample](validation_samples/munster_000042_000019_gtFine_labelIds_vis.png)
